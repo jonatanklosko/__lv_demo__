@@ -18,6 +18,8 @@ defmodule HibernateWeb.Router do
     pipe_through :browser
 
     live "/", HomeLive
+    live "/second", SecondLive, :page
+    live "/third", ThirdLive, :page
   end
 
   # Other scopes may use custom stacks.

@@ -4,7 +4,9 @@ defmodule HibernateWeb.HomeLive do
   @impl true
   def render(assigns) do
     ~H"""
-    <div></div>
+    <div>
+      <%= live_redirect "Second", to: Routes.second_path(@socket, :page) %>
+    </div>
     """
   end
 end
